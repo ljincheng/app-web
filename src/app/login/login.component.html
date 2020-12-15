@@ -1,0 +1,13 @@
+<section>
+<d-search [size]="'lg'" [autoFocus]="true" [(ngModel)]="searchText" (searchFn)="onSearch($event)"></d-search>
+</section>
+
+ 
+<section>
+    <d-button bsStyle="primary" style="margin-right: 4px;" (click)="approvalAction('/approval/instance/detail/e9ef1476-45c8-45a0-8bc4-a6c2c68c28db')">确认</d-button>
+    <d-button bsStyle="primary"  (click)="clearActionData()">清理数据</d-button>
+  </section>
+<span> postdata={{detail}}</span>
+
+ 
+ 
